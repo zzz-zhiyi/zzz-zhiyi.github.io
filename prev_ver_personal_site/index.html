@@ -1,0 +1,404 @@
+<head>
+    <title>Zhi Yi</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+    <style>
+        body {
+            position: relative;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", serif !important;
+        }
+
+        p,
+        span,
+        a {
+            font-family: "Raleway", sans-serif !important;
+        }
+
+        .button {
+            padding: 12px;
+            border: 2px solid;
+            border-radius: 3px;
+            text-transform: uppercase;
+            -webkit-transition: all .3s;
+            transition: all .3s;
+            font-size: 16px;
+        }
+
+        /* Scrollbar */
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #11ABB0;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #159296;
+        }
+
+
+        @media (max-width: 576px) {
+
+            #header {
+                background-size: initial !important;
+                background-position: top !important;
+            }
+
+            #header h1 {
+                font-size: 40px !important;
+            }
+
+            #header h4 {
+                font-size: 16px !important;
+            }
+
+            #portfolio h2 {
+                font-size: 25px !important;
+            }
+        }
+
+
+        /* H E A D E R */
+        #header {
+            min-height: 100vh;
+            background-image: url("https://images.unsplash.com/photo-1528460033278-a6ba57020470");
+            background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            -webkit-background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .menu-overlay {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .07);
+            z-index: 1;
+        }
+
+        .menu {
+            position: fixed;
+            top: 20px;
+            left: 10px;
+            z-index: 1;
+        }
+
+
+        .nav-content {
+            position: relative;
+            display: none;
+            padding: 0;
+            background: rgba(0, 0, 0, .8);
+        }
+
+        .nav-content>li {
+            list-style: none;
+            padding: 5px 20px;
+        }
+
+        .nav-content>li>a {
+            display: block;
+            text-decoration: none;
+            line-height: 32px;
+            color: #F5F5F5;
+            -webkit-transition: .3s;
+            transition: .3s;
+            letter-spacing: 1px;
+            font-size: 14px;
+            padding: 0 !important;
+        }
+
+        .nav-content>li>a:hover,
+        .active {
+            color: #11ABB0 !important;
+        }
+
+        .toggler {
+            padding: 10px 15px;
+            background: rgba(0, 0, 0, .8);
+            display: block;
+            cursor: pointer;
+            width: min-content;
+            width: -webkit-min-content;
+            width: -moz-min-content;
+            width: -ms-min-content;
+            width: -o-min-content;
+        }
+
+        .bar1,
+        .bar2,
+        .bar3 {
+            width: 25px;
+            height: 3px;
+            background-color: #F5F5F5;
+            margin: 6px 0;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+        }
+
+        .change .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-5px, 5px);
+        }
+
+        .change .bar2 {
+            opacity: 0;
+        }
+
+        .change .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+
+        .nav-content #dropdown-menu {
+            display: none;
+            background: rgba(0, 0, 0, .8);
+            position: absolute;
+            top: 0;
+            left: 100%;
+            border-left: 1px solid rgba(0, 0, 0, .3);
+            padding: 10px 0;
+        }
+
+        .nav-content #dropdown-menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .nav-content #dropdown-menu ul li a {
+            color: #F5F5F5;
+        }
+
+        #dropdown {
+            position: relative;
+        }
+
+        #header .dropdown-item:hover,
+        #header .dropdown-item.active {
+            color: #11ABB0;
+            background: transparent !important;
+        }
+
+        #header>.row {
+            min-height: 100vh;
+            width: 100vw;
+        }
+
+        #header h1 {
+            font-size: 80px;
+            color: black;
+        }
+
+        #header hr {
+            width: 200px;
+            border-color: #F5F5F5;
+        }
+
+        #header h4 {
+            font-size: 20px;
+            font-weight: normal;
+            color: black;
+        }
+
+
+        /* A B O U T */
+        #about {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            background: #2B2B2B;
+        }
+
+        #about h2 {
+            margin-bottom: 30px;
+            color: #F5F5F5;
+        }
+
+        #about p {
+            color: #999;
+        }
+
+        #about img {
+            width: 180px;
+        }
+
+        @media (max-width: 992px) {
+            .picture {
+                display: none;
+            }
+        }
+
+
+        /* P O R T F O L I O */
+        #portfolio {
+            padding: 50px 0;
+            background: #EBEEEE;
+        }
+
+        #portfolio h2 {
+            padding: 0;
+            margin: auto;
+            margin-bottom: 50px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 30px;
+            color: #666;
+        }
+
+
+        /*  F O O T E R  */
+        footer {
+            background: #0F0F0F;
+            position: relative;
+            padding: 10px;
+            margin: auto;
+        }
+
+        .footer-content p {
+            color: #565656;
+        }
+
+        @media (max-width: 768px) {
+            footer {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body id="body" data-spy="scroll" data-target="#navigation" data-offset="30">
+
+    <div id="header" class="container-fluid d-flex">
+
+        <div class="menu-overlay"></div>
+
+        <div class="menu">
+            <div class="toggler">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <ul class="nav-content" id="navigation">
+                <li><a class="nav-link" href="#header">Home</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#portfolio">Travel</a></li>
+            </ul>
+        </div>
+
+
+
+        <div class="row align-items-center justify-content-center text-center">
+            <div>
+                <h1>Goh Zhi Yi</h1>
+                <hr>
+                <h4>Student at SMU</h4>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="about" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-12 picture">
+                    <img src="./jellyfish_pic.jpg" style="border:0; float: left;" alt="picture">
+                </div>
+                <div class="col-md-9 col-sm-12 offset-md-1">
+                    <h2>About</h2>
+                    <p>
+                        I'm Zhi Yi~ and I get excited over the weirdest things!
+                        I have to write a biography, but all I can think of is how cool GitHub is.
+                        I was trying to commit... I mean, to GitHub. Oh no, do I have commitment issues...
+                        OK NVM IT WORKED SKSKSKSK
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="portfolio">
+        <h2>A Country I'd like to go to</h2>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <iframe height="500" width="900" src="https://www.youtube.com/embed/mLyeX0EQF10?autoplay=1&mute=1">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid text-white text-center">
+            <p>© Goh Zhi Yi</span></p>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+
+    <script>
+        $('#navigation a').on('click', function (error) {
+            error.preventDefault();
+            let hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(this.hash).offset().top
+            }, 1000);
+        });
+
+
+        $('.toggler, .nav-content a:not(#dropdown-link)').on('click', function () {
+            $('.toggler').toggleClass('change');
+            $('.nav-content').slideToggle();
+            $('#dropdown-menu').slideUp();
+            $('.menu-overlay').toggle();
+        });
+
+        $('.nav-content .dropdown').on('click', function () {
+            $('#dropdown-menu').slideToggle();
+        });
+
+        $('.menu-overlay').on('click', function () {
+            $('.toggler').removeClass('change');
+            $('.nav-content').slideUp();
+            $('#dropdown-menu').slideUp();
+            $('.menu-overlay').hide();
+        });
+    </script>
+
+</body>
