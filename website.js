@@ -40,7 +40,7 @@ let aText = new Array(
     "only features (´｡• ᵕ •｡`) ♡"
 );
 
-let iSpeed = 100; // time delay of print out
+let iSpeed = 70; // time delay of print out
 let iIndex = 0; // start printing array at this posision
 let iArrLength = aText[0].length; // the length of the text array
 let iScrollAt = 20; // start scrolling up at this many lines
