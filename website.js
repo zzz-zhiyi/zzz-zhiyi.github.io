@@ -28,7 +28,7 @@ $('.menu-overlay').on('click', function () {
 
 
 // Splash screen
-setTimeout(function() {
+setTimeout(function () {
     $('#splash-screen').fadeOut('slow');
 }, 700); // <-- time in milliseconds
 
@@ -79,7 +79,7 @@ setTimeout("typewriter()", 1300);
 
 
 // Set amount to scroll for "Scroll down" to appear/disappear
-$(window).bind('scroll', function() {
+$(window).bind('scroll', function () {
     if ($(window).scrollTop() > 50) {
         $('.arrow_container').hide();
     }
@@ -87,3 +87,18 @@ $(window).bind('scroll', function() {
         $('.arrow_container').show();
     }
 });
+
+
+function getQuote() {
+    let url = "https://api.adviceslip.com/advice"
+    axios.get(url)
+        .then(response => {
+            // process response.data object
+            console.log(response.data.slip.advice)
+            document.getElementById('quoteHere').innerHTML = response.data.slip.advice
+        })
+        .catch(error => {
+            // process error object
+        });
+    // document.getElementById('quoteHere') = ""
+}
