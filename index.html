@@ -16,7 +16,7 @@
     </script>
 </head>
 
-<body id="body" data-spy="scroll" data-target="#navigation" data-offset="30">
+<body>
 
     <div id="splash-screen">
         <div id="contents-load">
@@ -27,13 +27,13 @@
             </div>
             <hr>
             <div>
-                <strong class="text-white">Loading...</strong>
+                <strong class="text-white">Debugging...</strong>
             </div>
         </div>
     </div>
 
 
-    <div id="header" class="container-fluid d-flex">
+    <div id="header" class="container-fluid d-flex h-100">
         <div class="menu-overlay"></div>
         <div class="menu">
             <div class="toggler">
@@ -43,10 +43,10 @@
             </div>
 
             <ul class="nav-content" id="navigation">
-                <li><a class="nav-link" href="#header">Home</a></li>
-                <li><a class="nav-link" href="#about">About</a></li>
-                <li><a class="nav-link" href="#education">Education</a></li>
-                <li><a class="nav-link" href="#travel">Travel</a></li>
+                <li><a class="nav-link" href="#header">home</a></li>
+                <li><a class="nav-link" href="#about">about</a></li>
+                <li><a class="nav-link" href="#education">education</a></li>
+                <li><a class="nav-link" href="#travel">travel</a></li>
             </ul>
         </div>
 
@@ -70,62 +70,23 @@
     </div>
 
 
-    <div id="about" class="container-fluid">
+    <div id="about" class="container-fluid h-100">
         <h2 class='text-white text-center'>About</h2>
         <div class="container">
             <div class="row">
-                <div class="col-md-2 col-sm-12 picture">
-                    <img src="./jellyfish_pic.jpg" style="border:0; float: left;" alt="picture">
+                <div class="col-md-4 col-12">
+                    <img src="./jellyfish_pic.jpg" alt="picture" class="img-fluid rounded float-start h-30 w-70">
                 </div>
-                <div class="col-md-9 col-sm-12 offset-md-1">
-                    <p>
-                        I'm Zhi Yi~ A Year 2 student in SMU, and I get excited over the weirdest things!
-                        I have to write a biography, but all I can think of is how cool GitHub is.
-                        I was trying to commit... I mean, to GitHub. Oh no, do I have commitment issues...
-                        OK NVM IT WORKED SKSKSKSK :D
-                    </p>
+                <div class="col-md-8 col-12 pt-3">
+                    <h3>hi, i'm <span id="name_intro">zhiyi</span> :)</h3>
 
-                    <p>
-                        So yas, bacc on tracc. So, about me... I wanted to learn coding after seeing movies!
-                        Y'know, how an IT character types some random stuff on his/her gadget and goes "I'M INNN!", then
-                        something cool happens after?
-                        Sooo here I am. Though, reality couldn't be further away from expectation.
-                        Coding in real life and seeing people code in movies are vastly different, but it's still very
-                        kewl in its own way. ^^
-                    </p>
-
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#wisdomModal" onclick="getQuote()">
-                        I seek wisdom
-                    </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="wisdomModal" tabindex="-1" aria-labelledby="wisdomModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="wisdomModalLabel">A wise uncle says...</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body" id="quoteHere">
-                                    quote
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <div id="education" class="container-fluid">
+    <div id="education" class="container-fluid h-100">
         <h2 class='text-black text-center'>A Timeline of my Education</h2>
         <div class="container">
             <div class="row">
@@ -164,7 +125,7 @@
     </div>
 
 
-    <div class="container-fluid default-bg heading-text" id="travel">
+    <!-- <div class="container-fluid default-bg heading-text" id="travel">
         <h2 class='text-white text-center'>A Country I'd like to go to</h2>
         <div class="container-fluid">
             <div class="row">
@@ -174,34 +135,36 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <footer>
         <div class="footer-content">
             <div>
-                <h4>Location</h4>
-                <p>nah uh im shy :3</p>
+                <h4>Zhi Yi Goh</h4>
+                <p>trying to add meaning into lines of codes!</p>
             </div>
 
             <div>
-                <h4>Email</h4>
-                <p>zhiyi.goh.2021@smu.edu.sg</p>
+                <h4>Contact</h4>
+                <p>gohzhiyi77@gmail.com</p>
             </div>
 
             <div>
-                <h4>Social</h4>
+                <h4>Connect</h4>
 
-                <a href="https://www.linkedin.com/" target="_blank">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://github.com/" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
+                <div>
+                    <a href="https://www.linkedin.com/in/zhi-yi-goh" target="_blank" style="text-align: left;">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.github.com/zzz-zhiyi" target="_blank" style="text-align: left;">
+                        <i class="fab fa-github"></i>
+                    </a>
 
-                <a href="https://www.instagram.com/" target="_blank">
+                    <!-- <a href="https://www.instagram.com/" target="_blank">
                     <i class="fab fa-instagram"></i>
-                </a>
+                </a> -->
+                </div>
             </div>
         </div>
     </footer>

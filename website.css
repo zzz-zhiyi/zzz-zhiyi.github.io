@@ -23,7 +23,6 @@ a {
 }
 
 .button {
-    padding: 12px;
     border: 2px solid;
     border-radius: 3px;
     text-transform: uppercase;
@@ -33,30 +32,9 @@ a {
 }
 
 
-@media (max-width: 576px) {
-
-    #header {
-        background-size: initial !important;
-        background-position: top !important;
-    }
-
-    #header h1 {
-        font-size: 40px !important;
-    }
-
-    #header h4 {
-        font-size: 16px !important;
-    }
-
-    #portfolio h2 {
-        font-size: 25px !important;
-    }
-}
-
-
 /* H E A D E R */
 #header {
-    min-height: 100vh;
+    height: 100vh;
     background-image: url("./personal_bg2.jpg");
     background-size: cover;
     -moz-background-size: cover;
@@ -81,7 +59,7 @@ a {
 .menu {
     position: fixed;
     top: 20px;
-    left: 10px;
+    left: 20px;
     z-index: 1;
 }
 
@@ -129,7 +107,7 @@ a {
 
 .bar1,
 .bar2,
-.bar3{
+.bar3 {
     width: 25px;
     height: 3px;
     background-color: #F5F5F5;
@@ -191,10 +169,10 @@ a {
     color: black;
 }
 
-#header hr {
+/* #header hr {
     width: 200px;
     border-color: #F5F5F5;
-}
+} */
 
 #header h4 {
     font-size: 20px;
@@ -205,41 +183,39 @@ a {
 
 /* A B O U T */
 #about {
-    padding-top: 80px;
-    padding-bottom: 80px;
     background: #2B2B2B;
+    height: 100vh;
 }
 
 #about h2 {
     margin-bottom: 30px;
     color: #F5F5F5;
+    background-color: #2B2B2B;
 }
 
-#about p {
+#about h3 {
     color: #999;
 }
 
-#about img {
-    width: 180px;
-}
+/* #about img {
+    justify-content: center;
+    width: 20%;
+} */
 
-@media (max-width: 992px) {
-    .picture {
-        display: none;
-    }
+#name_intro {
+    color: #cadeee;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
 
 /* T I M E L I N E */
 #education {
-    padding-top: 80px;
-    padding-bottom: 80px;
     background: #EBEEEE;
+    height: 100vh;
 }
 
 #education h2 {
-    margin-bottom: 30px;
     color: #F5F5F5;
 }
 
@@ -270,9 +246,10 @@ a {
 
 
 /* P O R T F O L I O */
+/*
 #travel {
     padding: 50px 0;
-    /* background: #EBEEEE; */
+    /* background: #EBEEEE; *
     background: #2B2B2B;
 }
 
@@ -281,17 +258,22 @@ a {
     margin: auto;
     margin-bottom: 50px;
     text-align: center;
-    /* text-transform: uppercase; */
+    /* text-transform: uppercase; *
     font-size: 30px;
-    /* color: #666; */
+    /* color: #666; *
 }
-
+*/
 
 /*  F O O T E R  */
 footer {
-    background: #0F0F0F;
+    /* background: #0F0F0F; */
+    background-image: url("./footer.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
-    padding: 80px;
+    padding: 30px;
 }
 
 .footer-content {
@@ -325,6 +307,7 @@ footer {
 
 .footer-content a:hover {
     color: #FFF;
+    text-decoration: underline;
 }
 
 .footer-content a+a {
@@ -332,17 +315,16 @@ footer {
 }
 
 footer h4 {
-    color: #DDD;
+    color: black;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 30px;
     font-size: 18px;
 }
 
-
 @media (max-width: 768px) {
     footer {
-        padding: 80px 0;
+        padding: 30px 0;
     }
 
     .footer-content {
@@ -354,7 +336,7 @@ footer h4 {
 
     .footer-content>div {
         width: 100% !important;
-        margin-bottom: 45px;
+        margin-bottom: 30px;
     }
 
     .footer-content h4 {
@@ -362,7 +344,7 @@ footer h4 {
     }
 
     .footer-content a+a {
-        margin-left: 18px;
+        margin-left: 10px;
     }
 }
 

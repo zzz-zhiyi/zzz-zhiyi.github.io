@@ -1,7 +1,6 @@
 // Navigation menu
 $('#navigation a').on('click', function (error) {
     error.preventDefault();
-    let hash = this.hash;
     $('html, body').animate({
         scrollTop: $(this.hash).offset().top
     }, 1000);
@@ -87,18 +86,3 @@ $(window).bind('scroll', function () {
         $('.arrow_container').show();
     }
 });
-
-
-function getQuote() {
-    let url = "https://api.adviceslip.com/advice"
-    axios.get(url)
-        .then(response => {
-            // process response.data object
-            console.log(response.data.slip.advice)
-            document.getElementById('quoteHere').innerHTML = response.data.slip.advice
-        })
-        .catch(error => {
-            // process error object
-        });
-    // document.getElementById('quoteHere') = ""
-}
