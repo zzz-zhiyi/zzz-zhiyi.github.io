@@ -26,12 +26,6 @@ $('.menu-overlay').on('click', function () {
 });
 
 
-// Splash screen
-setTimeout(function () {
-    $('#splash-screen').fadeOut('slow');
-}, 700); // <-- time in milliseconds
-
-
 //Typewriter
 // set up text to print, each item in array is new line
 let aText = new Array(
@@ -66,14 +60,14 @@ function typewriter() {
         iIndex++;
         if (iIndex != aText.length) {
             iArrLength = aText[iIndex].length;
-            setTimeout("typewriter()", 300);
+            setTimeout("typewriter()", 100);
         }
     } else {
         setTimeout("typewriter()", iSpeed);
     }
 }
 
-setTimeout("typewriter()", 1300);
+setTimeout("typewriter()", 700);
 
 
 

@@ -19,16 +19,7 @@ h6 {
 p,
 span,
 a {
-    font-family: 'Calibri';
-}
-
-.button {
-    border: 2px solid;
-    border-radius: 3px;
-    text-transform: uppercase;
-    -webkit-transition: all .3s;
-    transition: all .3s;
-    font-size: 16px;
+    font-family: 'Verdana';
 }
 
 
@@ -165,18 +156,7 @@ a {
 }
 
 #header h1 {
-    font-size: 80px;
-    color: black;
-}
-
-/* #header hr {
-    width: 200px;
-    border-color: #F5F5F5;
-} */
-
-#header h4 {
-    font-size: 20px;
-    font-weight: normal;
+    font-size: 50px;
     color: black;
 }
 
@@ -184,29 +164,26 @@ a {
 /* A B O U T */
 #about {
     background: #2B2B2B;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #about h2 {
-    margin-bottom: 30px;
     color: #F5F5F5;
     background-color: #2B2B2B;
 }
 
-#about h3 {
+#about h4 {
     color: #999;
 }
-
-/* #about img {
-    justify-content: center;
-    width: 20%;
-} */
 
 #name_intro {
     color: #cadeee;
     font-family: 'Courier New', Courier, monospace;
 }
 
+#about_paragraph {
+    color: #F5F5F5
+}
 
 
 /* T I M E L I N E */
@@ -346,28 +323,6 @@ footer h4 {
     .footer-content a+a {
         margin-left: 10px;
     }
-}
-
-
-/* L O A D   S C R E E N */
-#splash-screen {
-    overflow: hidden;
-    position: fixed;
-
-    top: 0;
-    left: 0;
-
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
-    z-index: 10;
-}
-
-#contents-load {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
 
 
