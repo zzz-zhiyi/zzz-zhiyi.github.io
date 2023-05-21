@@ -189,7 +189,7 @@ a {
 /* T I M E L I N E */
 #education {
     background: #EBEEEE;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #education h2 {
