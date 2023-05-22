@@ -80,9 +80,3 @@ $(window).bind('scroll', function () {
         $('.arrow_container').show();
     }
 });
-
-
-
-document.getElementById("index").onclick = function () {
-    location.href = "index.html";
-};
