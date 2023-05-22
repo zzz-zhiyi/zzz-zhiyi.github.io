@@ -155,7 +155,7 @@ a {
     width: 100vw;
 }
 
-#header h1 {
+#header h3 {
     font-size: 50px;
     color: black;
 }
@@ -164,7 +164,8 @@ a {
 /* A B O U T */
 #about {
     background: #2B2B2B;
-    min-height: 100vh;
+    height: 50vh;
+    width: 100vw;
 }
 
 #about h2 {
@@ -172,7 +173,7 @@ a {
     background-color: #2B2B2B;
 }
 
-#about h4 {
+#about h6 {
     color: #999;
 }
 
@@ -189,7 +190,7 @@ a {
 /* T I M E L I N E */
 #education {
     background: #EBEEEE;
-    min-height: 100vh;
+    height: 50vh;
 }
 
 #education h2 {
@@ -330,9 +331,12 @@ footer h4 {
 .arrow_container {
     position: fixed;
     left: 50%;
+    right: 50%;
     bottom: 20px;
     transform: translate(-50%, -50%);
     margin: 0 auto;
+    z-index: 1;
+    width: 30px;
 }
 
 .chevron {
@@ -350,7 +354,7 @@ footer h4 {
     position: absolute;
     top: 0;
     height: 100%;
-    width: 51%;
+    width: 50%;
     background: #fff;
 }
 
@@ -376,7 +380,7 @@ footer h4 {
 .text {
     display: block;
     margin-top: 75px;
-    margin-left: -30px;
+    /* margin-left: -30px; */
     font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
     font-size: 12px;
     color: #fff;

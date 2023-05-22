@@ -1,5 +1,6 @@
 <head>
-    <title>Zhi Yi</title>
+    <title>Zhi Yi | Home</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -8,16 +9,10 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <link href="./website.css" rel="stylesheet">
-    <script>
-        //Reset scroll top
-        window.onbeforeunload = function () {
-            window.scrollTo(0, 0);
-        }
-    </script>
 </head>
 
 <body>
-    <div id="header" class="container-fluid d-flex h-100">
+    <div id="header">
         <div class="menu-overlay"></div>
         <div class="menu">
             <div class="toggler">
@@ -27,145 +22,31 @@
             </div>
 
             <ul class="nav-content" id="navigation">
-                <li><a class="nav-link" href="#header">home</a></li>
-                <li><a class="nav-link" href="#about">about</a></li>
+                <li><a class="nav-link" href="#">home</a></li>
+                <li><a class="nav-link" href="about.html">about</a></li>
                 <li><a class="nav-link" href="#education">education</a></li>
-                <li><a class="nav-link" href="#travel">travel</a></li>
+
             </ul>
         </div>
 
 
         <div class="row align-items-center justify-content-center text-center">
             <div>
-                <h1 class="text-black">Goh Zhi Yi</h1>
-                <h4 id="typedtext" class="text-black" style="visibility: hidden;"></h4>
-            </div>
-        </div>
-
-
-
-        <div class="arrow_container">
-            <a href="#about">
-                <div class="chevron"></div>
-                <div class="chevron"></div>
-                <div class="chevron"></div>
-                <span class="text">Scroll down</span>
-            </a>
-        </div>
-    </div>
-
-
-    <div id="about" class="container-fluid h-100">
-        <div class="row">
-            <div class="col">
-                <h2 class='text-white text-center'>About</h2>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                <!-- <div class="container">
-                    <div class="row"> -->
-                        <!-- <img src="./jellyfish_pic.jpg" alt="picture" class="img-fluid rounded float-start h-30 w-70"> -->
-
-                        <h4>hi, i'm <span id="name_intro">zhiyi</span> :)</h4>
-                        <p id="about_paragraph">
-                            i'm an undergraduate from Singapore Management University,
-                            <br>
-                            pursuing Bachelor of Science (Information Systems) (FinTech) with a second major in
-                            Finance (Banking).
-                        </p>
-
-                    <!-- </div>
-                </div> -->
-            </div>
-        </div>
-
-    </div>
-
-
-    <div id="education" class="container-fluid h-100">
-        <h2 class='text-black text-center'>A Timeline of my Education</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2 col-sm-12"></div>
-                <div class="col-md-9 col-sm-12 offset-md-1">
-                    <section class="ps-5 py-5">
-                        <ul class="timeline">
-                            <li class="timeline-item mb-5">
-                                <h5 class="fw-bold">Student at SMU</h5>
-                                <p class="text-muted mb-2 fw-bold">August 2021</p>
-                                <p class="text-muted">
-                                    Look ma I'm in university!
-                                </p>
-                            </li>
-
-                            <li class="timeline-item mb-5">
-                                <h5 class="fw-bold">Graduated from Polytechnic</h5>
-                                <p class="mb-2 fw-bold">April 2021</p>
-                                <p class="text-muted">
-                                    Yayyy lets get dis breaddd
-                                </p>
-                            </li>
-
-                            <li class="timeline-item mb-5">
-                                <h5 class="fw-bold">Completed O-Levels</h5>
-                                <p class="text-muted mb-2 fw-bold">January 2017</p>
-                                <p class="text-muted">
-                                    Who knew what the future would hold?
-                                </p>
-                            </li>
-                        </ul>
-                    </section>
-                </div>
+                <h3 class="text-black">Goh Zhi Yi</h3>
+                <h6 id="typedtext" class="text-black" style="visibility: hidden;"></h6>
             </div>
         </div>
     </div>
 
-
-    <!-- <div class="container-fluid default-bg heading-text" id="travel">
-        <h2 class='text-white text-center'>A Country I'd like to go to</h2>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col d-flex justify-content-center">
-                    <iframe height="500" width="900" src="https://www.youtube.com/embed/mLyeX0EQF10?autoplay=1&mute=1">
-                    </iframe>
-                </div>
-            </div>
-        </div>
+    <!-- <div class="arrow_container">
+        <a href="#about">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <span class="text"></span>
+        </a>
     </div> -->
 
-
-    <footer>
-        <div class="footer-content">
-            <div>
-                <h4>Zhi Yi Goh</h4>
-                <p>trying to add meaning into lines of codes!</p>
-            </div>
-
-            <div>
-                <h4>Contact</h4>
-                <p>gohzhiyi77@gmail.com</p>
-            </div>
-
-            <div>
-                <h4>Connect</h4>
-
-                <div>
-                    <a href="https://www.linkedin.com/in/zhi-yi-goh" target="_blank" style="text-align: left;">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://www.github.com/zzz-zhiyi" target="_blank" style="text-align: left;">
-                        <i class="fab fa-github"></i>
-                    </a>
-
-                    <!-- <a href="https://www.instagram.com/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a> -->
-                </div>
-            </div>
-        </div>
-    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
