@@ -9,48 +9,81 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <link href="./website.css" rel="stylesheet">
+
+    <style>
+        .scroller {
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+        }
+
+        .scroller section {
+            scroll-snap-align: start;
+        }
+    </style>
+
+    <script>
+        // const gra = function (min, max) {
+        //     return Math.random() * (max - min) + min;
+        // }
+        // const init = function () {
+        //     let items = document.querySelectorAll('section');
+        //     for (let i = 0; i < items.length; i++) {
+        //         items[i].style.background = randomColor({ luminosity: 'light' });
+        //     }
+        //     cssScrollSnapPolyfill()
+        // }
+        // init();
+    </script>
 </head>
 
 <body>
-    <div id="header">
-        <div class="menu-overlay"></div>
-        <div class="menu">
-            <div class="toggler">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-
-            <ul class="nav-content" id="navigation">
-                <li><a class="nav-link" href="index.html" id="index">home</a></li>
-                <li><a class="nav-link" href="#">about</a></li>
-                <li><a class="nav-link" href="#education">education</a></li>
-            </ul>
+    <div class="menu-overlay"></div>
+    <div class="menu">
+        <div class="toggler">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </div>
 
-
-        <div class="row align-items-center justify-content-center text-center">
-            <div>
-                <h3 class="text-black">Goh Zhi Yi</h3>
-                <h6 id="typedtext" class="text-black" style="visibility: hidden;"></h6>
-            </div>
-        </div>
+        <ul class="nav-content" id="navigation">
+            <li><a class="nav-link" href="index.html">home</a></li>
+            <li><a class="nav-link" href="#">about</a></li>
+            <li><a class="nav-link" href="#education">education</a></li>
+        </ul>
     </div>
 
-    <div id="about">
-        <!-- <div class="container-fluid">
+    <article class="scroller">
+        <section>
+            <h2>Section one</h2>
+        </section>
+        <section>
+            <h2>Section two</h2>
+        </section>
+        <section>
+            <h2>Section three</h2>
+        </section>
+    </article>
+
+
+
+    <section>
+        <h3 class="text-black">Goh Zhi Yi</h3>
+    </section>
+
+    <section>
+        <div class="container">
             <div class="row pt-5">
-                <div class="col">
+                <div class="col-4 my-auto align-self-center d-flex">
                     <h2>About me</h2>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">
+
+                <div class="col-8">
                     <h6 class="pt-3">hi, i'm <span id="name_intro">zhiyi</span> :)</h6>
                 </div>
             </div>
-        </div> -->
-        
+        </div>
+
         <!-- <div class="row">
             <div class="col">
                 <h2 class='text-white text-center'>About</h2>
@@ -83,7 +116,7 @@
                 </div>
             </div>
         </div> -->
-    </div>
+    </section>
 
 
 
