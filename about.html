@@ -21,32 +21,18 @@
             scroll-snap-align: start;
         }
     </style>
-
-    <script>
-        // const gra = function (min, max) {
-        //     return Math.random() * (max - min) + min;
-        // }
-        // const init = function () {
-        //     let items = document.querySelectorAll('section');
-        //     for (let i = 0; i < items.length; i++) {
-        //         items[i].style.background = randomColor({ luminosity: 'light' });
-        //     }
-        //     cssScrollSnapPolyfill()
-        // }
-        // init();
-    </script>
 </head>
 
 <body>
-    <div class="menu-overlay"></div>
-    <div class="menu">
+    <div class="menu-overlay" style="z-index: 5;"></div>
+    <div class="menu" style="z-index: 5; position: fixed;">
         <div class="toggler">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
 
-        <ul class="nav-content" id="navigation">
+        <ul class="nav-content">
             <li><a class="nav-link" href="index.html">home</a></li>
             <li><a class="nav-link" href="#">about</a></li>
             <li><a class="nav-link" href="#education">education</a></li>
@@ -66,7 +52,7 @@
     </article>
 
 
-
+<!-- 
     <section>
         <h3 class="text-black">Goh Zhi Yi</h3>
     </section>
@@ -82,7 +68,7 @@
                     <h6 class="pt-3">hi, i'm <span id="name_intro">zhiyi</span> :)</h6>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- <div class="row">
             <div class="col">

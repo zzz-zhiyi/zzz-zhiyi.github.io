@@ -1,10 +1,20 @@
 // Navigation menu
-$('#navigation a').on('click', function (error) {
-    error.preventDefault();
-    $('html, body').animate({
-        scrollTop: $(this.hash).offset().top
-    }, 1000);
-});
+var nav = $('#navigation a');
+if (nav.length) {
+    nav.on('click', function (error) {
+        error.preventDefault();
+        $('html, body').animate({
+            scrollTop: $(this.hash).offset().top
+        }, 1000);
+    });
+}
+
+// $('#navigation a').on('click', function (error) {
+//     error.preventDefault();
+//     $('html, body').animate({
+//         scrollTop: $(this.hash).offset().top
+//     }, 1000);
+// });
 
 
 $('.toggler, .nav-content a:not(#dropdown-link)').on('click', function () {
