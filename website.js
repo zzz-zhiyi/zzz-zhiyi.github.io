@@ -82,11 +82,34 @@ setTimeout("typewriter()", 700);
 
 
 // Set amount to scroll for "Scroll down" to appear/disappear
-$(window).bind('scroll', function () {
-    if ($(window).scrollTop() > 50) {
-        $('.arrow_container').hide();
-    }
-    else {
-        $('.arrow_container').show();
+console.log($(document).scrollTop());
+$(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > 800) {
+        $('.arrow_container').fadeIn();
+    } else {
+        $('.arrow_container').fadeOut();
     }
 });
+
+// $(window).bind('scroll', function () {
+//     if ($(window).scrollTop() > document.documentElement.scrollHeight) {
+//         $('.arrow_container').hide();
+//     }
+//     else {
+//         $('.arrow_container').show();
+//     }
+// });
+
+myID = document.getElementById("arrow_container");
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 800) {
+        myID.show()
+    } else {
+        myID.hide()
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);

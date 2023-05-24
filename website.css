@@ -176,30 +176,45 @@ a {
     color: #999;
 }
 
+.intro {
+    font-weight: bolder;
+}
+
 #name_intro {
-    color: #cadeee;
+    /* color: #cadeee; */
     font-family: 'Courier New', Courier, monospace;
 }
+
+span.highlight {
+    background: linear-gradient(104deg, rgba(160, 173, 238, 0) 0.9%, rgba(160, 173, 238, 1.25) 2.4%, rgba(160, 173, 238, 0.5) 5.8%, rgba(160, 173, 238, 0.1) 93%, rgba(160, 173, 238, 0.7) 96%, rgba(130, 255, 1732, 0) 98%), linear-gradient(183deg, rgba(160, 173, 238, 0) 0%, rgba(160, 173, 238, 0.3) 7.9%, rgba(160, 173, 238, 0) 15%);
+    padding: 0.2em 10px;
+    /* -webkit-box-decoration-break: clone; */
+    margin: 0;
+    border-radius: 7.5px;
+    text-shadow: -12p   x 12px 9.8px rgba(160, 173, 238, 0.7), 21px -18.1px 7.3px rgba(255, 255, 255, 1), -18.1px -27.3px 30px rgba(255, 255, 255, 1);
+}
+
 
 #about h2 {
     color: #F5F5F5
 }
 
 section {
-    background: #2B2B2B;
-    border-bottom: 1px solid white;
+    background: #F0F0F0;
+    /*#2B2B2B;*/
+    border-bottom: 1px solid black;
     padding: 1rem;
     height: 100vh;
     width: 100vw;
     scroll-snap-align: start;
-    text-align: center;
+    /* text-align: center; */
     position: relative;
 }
 
 
 
 /* T I M E L I N E */
-#education {
+/* #education {
     background: #EBEEEE;
     height: 50vh;
 }
@@ -231,7 +246,7 @@ section {
     height: 11px;
     width: 11px;
     content: "";
-}
+} */
 
 
 /* P O R T F O L I O */
