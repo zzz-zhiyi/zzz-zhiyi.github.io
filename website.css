@@ -214,39 +214,16 @@ section {
 
 
 /* T I M E L I N E */
-/* #education {
+#education_timeline_block {
     background: #EBEEEE;
-    height: 50vh;
+    height: relative;
+    /* height: 50vh; */
 }
 
-#education h2 {
-    color: #F5F5F5;
-}
 
-.timeline {
-    border-left: 1px solid black;
-    position: relative;
-    list-style: none;
+.major-name {
+    font-family: Arial, Helvetica, sans-serif
 }
-
-.timeline .timeline-item {
-    position: relative;
-}
-
-.timeline .timeline-item:after {
-    position: absolute;
-    display: block;
-    top: 0;
-}
-
-.timeline .timeline-item:after {
-    background-color: black;
-    left: -38px;
-    border-radius: 50%;
-    height: 11px;
-    width: 11px;
-    content: "";
-} */
 
 
 /* P O R T F O L I O */
@@ -355,10 +332,10 @@ footer h4 {
 
 /* S C R O L L   D O W N */
 .arrow_container {
-    position: fixed;
+    position: absolute;
     left: 50%;
     right: 50%;
-    bottom: 20px;
+    bottom: 10px;
     transform: translate(-50%, -50%);
     margin: 0 auto;
     z-index: 1;
@@ -381,7 +358,7 @@ footer h4 {
     top: 0;
     height: 100%;
     width: 50%;
-    background: #fff;
+    background: black;
 }
 
 .chevron:before {
@@ -443,3 +420,4 @@ footer h4 {
         transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
     }
 }
+

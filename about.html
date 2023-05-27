@@ -14,7 +14,7 @@
         .scroller {
             height: 100vh;
             overflow-y: scroll;
-            scroll-snap-type: y mandatory;
+            scroll-snap-type: y mandatory; /*proximity;*/
         }
 
         .scroller section {
@@ -51,7 +51,7 @@
                 <div class="row pt-5">
                     <div class="col-0 col-md-1"></div>
                     <div class="col-12 col-md-11">
-                        <h6 class="text-start intro">hi, i'm <span class="highlight" id="name_intro">zhiyi</span> :)
+                        <h6 class="text-start intro">Hi, i'm <span class="highlight" id="name_intro">zhiyi</span> :)
                         </h6>
                         <p class="pt-3">
                             I'm an undergraduate from Singapore Management University, pursuing Bachelor of Science
@@ -64,7 +64,8 @@
                 </div>
             </div>
 
-            <div class="arrow_container" id="arrow_container">
+            
+            <div class="arrow_container pt-5" id="arrow_container">
                 <a href="#education">
                     <div class="chevron"></div>
                     <div class="chevron"></div>
@@ -75,8 +76,82 @@
 
         </section>
 
-        <section id="education">
-            <h2>Section two</h2>
+        <section id="education_timeline_block">
+            <div class="container pt-5">
+                <div class="row pt-5">
+                    <div class="col">
+                        <h2>My Education Timeline</h2>
+                    </div>
+                </div>
+
+                <div class="row pt-1">
+                    <div class="col-0 col-md-1"></div>
+                    <div class="col-12 col-md-11">
+                        <div class="container py-2 mt-4 mb-4">
+                            <!-- timeline item 1 -->
+                            <div class="row">
+                              <!-- timeline item 1 left dot -->
+                              <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                <div class="row h-50">
+                                  <div class="col">&nbsp;</div>
+                                  <div class="col">&nbsp;</div>
+                                </div>
+                                <h5 class="m-2">
+                                  <span class="badge rounded-circle bg-info border">&nbsp;</span>
+                                </h5>
+                                <div class="row h-50">
+                                  <div class="col border-end border-2 border-info">&nbsp;</div>
+                                  <div class="col">&nbsp;</div>
+                                </div>
+                              </div>
+                              <!-- timeline item 1 event content -->
+                              <div class="col py-2">
+                                <div class="card">
+                                  <div class="card-body">
+                                    <div class="float-right text-muted">Singapore Management University, School of Computing and Information Systems</div>
+                                    <h5 class="card-title major-name">Bachelor of Science (Information Systems) (FinTech) and Finance (Banking)</h5>
+                                    <p class="card-text">Aug 2021 - Present</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+
+                            <!-- timeline item 2 -->
+                            <div class="row">
+                                <!-- timeline item 1 left dot -->
+                                <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                  <div class="row h-50">
+                                    <div class="col">&nbsp;</div>
+                                    <div class="col">&nbsp;</div>
+                                  </div>
+                                  <h5 class="m-2">
+                                    <span class="badge rounded-circle bg-info border">&nbsp;</span>
+                                  </h5>
+                                  <div class="row h-50">
+                                    <div class="col border-end border-2 border-info">&nbsp;</div>
+                                    <div class="col">&nbsp;</div>
+                                  </div>
+                                </div>
+                                <!-- timeline item 1 event content -->
+                                <div class="col py-2">
+                                  <div class="card">
+                                    <div class="card-body">
+                                      <div class="float-right text-muted">Temasek Polytechnic, School of Informatics and IT</div>
+                                      <h5 class="card-title major-name">Diploma with Merit in Financial Business Informatics</h5>
+                                      <p class="card-text">2018 - 2021</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                          <!--container-->
+                    </div>
+                </div>
+            </div>
+
+            
+
         </section>
 
         <section>
