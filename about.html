@@ -16,15 +16,19 @@
             margin: 0;
         }
 
-        .scroller {
-            height: 100vh;
-            overflow-y: scroll;
-            scroll-snap-type: y mandatory; /*proximity;*/
+        /* .scroller {
+            scroll-snap-type: y mandatory;
+        } */
+
+        html {
+            scroll-snap-type: y mandatory;
         }
 
-        .scroller section {
-            scroll-snap-align: start;
+        .containery {
+            height: 100vh;
+            scroll-snap-align: top;
         }
+
     </style>
 </head>
 
@@ -40,13 +44,15 @@
         <ul class="nav-content">
             <li><a class="nav-link" href="index.html">home</a></li>
             <li><a class="nav-link" href="#">about</a></li>
-            <li><a class="nav-link" href="#education">education</a></li>
+            <!-- <li><a class="nav-link" href="#education">education</a></li> -->
         </ul>
     </div>
 
-    <article class="scroller">
-        <section id="intro_block">
-            <div class="container pt-5">
+    <section class="scroll">
+
+    
+        <div class="containery y mandatory-scroll-snapping">
+            <div class="container pt-5 vh-100">
                 <div class="row pt-5">
                     <div class="col">
                         <h2>About me</h2>
@@ -59,16 +65,16 @@
                         <h6 class="text-start intro">Hi, i'm <span class="highlight" id="name_intro">zhiyi</span> :)
                         </h6>
                         <p class="pt-3">
-                            I'm an undergraduate from Singapore Management University, pursuing Bachelor of Science
-                            (Information Systems) (FinTech) with a second major in
-                            Finance (Banking).
+                            I'm an undergraduate from Singapore Management University, <br>
+                            pursuing <strong>Bachelor of Science (Information Systems) (FinTech) </strong>
+                            and second major in <strong>Finance (Banking)</strong>.
                         </p>
                         <br>
                         <p>I'm seeking to add meaning into lines of code!</p>
                     </div>
                 </div>
             </div>
-
+        </div>
             
             <!-- <div class="arrow_container pt-5" id="arrow_container">
                 <a href="#education">
@@ -79,10 +85,11 @@
                 </a>
             </div> -->
 
-        </section>
+        <!-- </section> -->
 
-        <section id="education_timeline_block">
-            <div class="container pt-5">
+        <!-- <section id="education_timeline_block scroller"> -->
+            <div class="containery y mandatory-scroll-snapping"></div>
+            <div class="container pt-5 vh-100">
                 <div class="row pt-5">
                     <div class="col">
                         <h2>My Education Timeline</h2>
@@ -154,19 +161,15 @@
                     </div>
                 </div>
             </div>
+        <!-- </section> -->
 
-            
-
-        </section>
-
-        <section>
+        <!-- <section>
             <h2>Work Experience</h2>
         </section>
         
         <section>
             <h2>Project Experience</h2>
-        </section>
-    </article>
+        </section> -->
 
 
     <!-- 
