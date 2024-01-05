@@ -8,24 +8,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-    <link href="./website.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-    <div class="menu-overlay"></div>
-    <div class="menu">
-        <div class="toggler">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
+    <div id="navbar-placeholder"></div>
 
-        <ul class="nav-content">
-            <li><a class="nav-link" href="#">home</a></li>
-            <li><a class="nav-link" href="about.html">about</a></li>
-            <li><a class="nav-link" href="#education">education</a></li>
-        </ul>
-    </div>
+    <script>
+        $(document).ready(function() {
+            // Load navbar.html and inject it into the #navbar-placeholder div
+            $('#navbar-placeholder').load('./navbar.html');
+        });
+    </script>
 
     <div id="header">
         <div class="row align-items-center justify-content-center text-center">
@@ -36,11 +30,6 @@
         </div>
     </div>
 
-    
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
@@ -48,7 +37,4 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
-    <script src="./website.js"></script>
-
 </body>
