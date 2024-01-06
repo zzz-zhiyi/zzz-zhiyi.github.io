@@ -72,18 +72,18 @@ setTimeout("typewriter()", 700);
 // Set amount to scroll for "Scroll down" to appear/disappear
 
 // console.log($(document).scrollTop());
-let mybutton = document.getElementById("arrow_container");
+// let mybutton = document.getElementById("arrow_container");
 
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-  prevScrollpos = currentScrollPos;
-};
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function () {
+//   var currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     mybutton.style.display = "block";
+//   } else {
+//     mybutton.style.display = "none";
+//   }
+//   prevScrollpos = currentScrollPos;
+// };
 
 // window.onscroll = function () {
 //   scrollFunction();
@@ -115,15 +115,15 @@ window.onscroll = function () {
 //     }
 // });
 
-myID = document.getElementById("arrow_container");
+// // myID = document.getElementById("arrow_container");
 
-var myScrollFunc = function () {
-  var y = window.scrollY;
-  if (y >= 800) {
-    myID.show();
-  } else {
-    myID.hide();
-  }
-};
+// var myScrollFunc = function () {
+//   var y = window.scrollY;
+//   if (y >= 800) {
+//     myID.show();
+//   } else {
+//     myID.hide();
+//   }
+// };
 
-window.addEventListener("scroll", myScrollFunc);
+// window.addEventListener("scroll", myScrollFunc);
