@@ -127,21 +127,3 @@ setTimeout("typewriter()", 700);
 // };
 
 // window.addEventListener("scroll", myScrollFunc);
-document.addEventListener('DOMContentLoaded', function() {
-  var firstWord = document.querySelector('.word-list li:first-child');
-  firstWord.classList.add('active');
-});
-
-const rotatingText = document.getElementById('rotatingText');
-const wordList = document.querySelector('.word-list');
-const words = wordList.querySelectorAll('li');
-let index = 0;
-
-function rotateWords() {
-  words[index].classList.remove('active');
-  index = (index + 1) % words.length;
-  rotatingText.textContent = `i do ${words[index].textContent}`;
-  words[index].classList.add('active');
-}
-
-setInterval(rotateWords, 2000); // Change word every 2 seconds
