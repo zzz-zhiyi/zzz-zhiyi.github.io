@@ -9,6 +9,7 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 
 </head>
 
@@ -22,10 +23,13 @@
         });
     </script>
 
-    <div class="container-fluid vh-100 d-flex align-items-center justify-content-center p-0 m-0" id="header">
+    <div class="container-fluid vh-100 d-flex align-items-center justify-content-center p-0 m-0 text-center"
+        id="header">
         <div class="row">
             <div class="col">
-                <h2 class="text-black home-text text-center">Goh Zhi Yi</h2>
+                <!-- <h2 class="text-black home-text text-center">Goh Zhi Yi</h2> -->
+                <h2><span class="highlight" id="name_intro">Hi, I'm Zhi Yi! :D</span></h2>
+                <br>
                 <h6 id="typedtext" class="text-black" style="visibility: hidden;"></h6>
             </div>
         </div>
@@ -34,26 +38,32 @@
     <div class="container vw-100 vh-100 d-flex align-items-center justify-content-center">
         <div class="content row align-items-center justify-content-center text-center">
             <div class="col">
-                <h1><span class="highlight" id="name_intro">Hi! I'm Zhi Yi :D</span></h1>
+
+                <br>
+
+                <h4>I seek to add meaning to lines of <span><a id="code-link" href="https://github.com/zzz-zhiyi"
+                            style="text-decoration: none; color: inherit;">code</a></span>.</h4>
+
                 <br><br>
 
-                <h4>I seek to add meaning to the lines of <span><a id="code-link" href="https://github.com/zzz-zhiyi"
-                            style="text-decoration: none; color: inherit;">code</a></span> that I write.</h4>
+                <div class="text-container">
+                    <span id="rotatingText">i do</span>
+                    <ul class="word-list">
+                        <li class="active">Python</li>
+                        <li>JavaScript</li>
+                        <li>UI/UX</li>
+                    </ul>
+                </div>
 
-                <br><br>
-                <p class="text-start">Y3 student from Singapore Management University,
+
+                <!-- <p class="text-start">Y3 student from Singapore Management University,
                     <br>
                     Bachelor of Science (Information Systems) (FinTech) and Finance (Banking).
-                </p>
+                </p> -->
+
+                <br><br>
+
             </div>
         </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
-
-    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
-
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>

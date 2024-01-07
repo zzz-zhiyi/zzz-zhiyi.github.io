@@ -215,32 +215,26 @@ span.highlight {
 }
 
 #code-link {
-    background:
-      linear-gradient(
-        to right,
-        rgba(100, 200, 200, 1),
-        rgba(100, 200, 200, 1)
-      ),
-      linear-gradient(
-        to right,
-        rgba(255, 0, 0, 1),
-        rgba(255, 0, 180, 1),
-        rgba(0, 100, 200, 1)
+  background: linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
     );
-    background-size: 100% 3px, 0 3px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 400ms;
-  }
-  
-  #code-link:hover {
-    background-size: 0 3px, 100% 3px;
-  }
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
 
-
-
-
-  
+#code-link:hover {
+  background-size: 0 3px, 100% 3px;
+}
 
 /* S C R O L L   D O W N */
 .arrow_container {
@@ -292,42 +286,47 @@ span.highlight {
   animation: move 3s ease-out 2s infinite;
 }
 
-.text {
-  display: block;
-  margin-top: 75px;
-  /* margin-left: -30px; */
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-size: 12px;
-  color: #fff;
-  text-transform: uppercase;
-  white-space: nowrap;
-  opacity: 0.25;
-  animation: pulse 2s linear alternate infinite;
+.text-container {
+  position: relative;
 }
 
-@keyframes pulse {
-  to {
-    opacity: 1;
-  }
+.word-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  /* transition: opacity 0.5s ease-in-out; */
+  transition: opacity 0.5s ease-in-out, top 0.5s ease-in-out;
 }
 
-@keyframes move {
-  25% {
-    opacity: 1;
-  }
+.word-list li {
+  display: none;
+}
 
-  33% {
-    opacity: 1;
-    transform: translateY(30px);
-  }
+.word-list li.active {
+  display: inline;
+  transition: color 1s; /* Animate the color change */
+}
 
-  67% {
-    opacity: 1;
-    transform: translateY(40px);
-  }
+.word-list li:first-child {
+  display: inline;
+}
 
-  100% {
-    opacity: 0;
-    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
-  }
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: #c0392b;
+}
+
+.green {
+  color: #16a085;
 }
