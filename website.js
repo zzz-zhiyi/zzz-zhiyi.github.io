@@ -69,61 +69,25 @@ function typewriter() {
 
 setTimeout("typewriter()", 700);
 
-// Set amount to scroll for "Scroll down" to appear/disappear
 
-// console.log($(document).scrollTop());
-// let mybutton = document.getElementById("arrow_container");
 
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function () {
-//   var currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     mybutton.style.display = "block";
-//   } else {
-//     mybutton.style.display = "none";
-//   }
-//   prevScrollpos = currentScrollPos;
-// };
+$(document).ready(function(){
+  $(window).scroll(function(){
+      if ($(window).scrollTop() > 0) {
+          $("#scroll").css("opacity", 0);
+      } else {
+          $("#scroll").css("opacity", 1);
+      }
+  });
+});
 
-// window.onscroll = function () {
-//   scrollFunction();
-// };
 
-// function scrollFunction() {
-//   if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-//     mybutton.style.display = "none";
-//   } else {
-//     mybutton.style.display = "block";
-//   }
-// }
-
-// $(document).scroll(function () {
-//     var y = $(this).scrollTop();
-//     if (y > 800) {
-//         $('.arrow_container').fadeIn();
-//     } else {
-//         $('.arrow_container').fadeOut();
-//     }
+// $(document).ready(function(){
+//   $(window).scroll(function(){
+//       if ($(window).scrollTop() > 0) {
+//           $("#your-div-id").css("opacity", 0);
+//       } else {
+//           $("#your-div-id").css("opacity", 1);
+//       }
+//   });
 // });
-
-// $(window).bind('scroll', function () {
-//     if ($(window).scrollTop() > document.documentElement.scrollHeight) {
-//         $('.arrow_container').hide();
-//     }
-//     else {
-//         $('.arrow_container').show();
-//     }
-// });
-
-// // myID = document.getElementById("arrow_container");
-
-// var myScrollFunc = function () {
-//   var y = window.scrollY;
-//   if (y >= 800) {
-//     myID.show();
-//   } else {
-//     myID.hide();
-//   }
-// };
-
-// window.addEventListener("scroll", myScrollFunc);
